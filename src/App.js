@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'; 
 import Nav from "./nav/Nav";
 import About from "./about/About";
 import Skills from "./skills/Skills";
@@ -9,21 +9,20 @@ import './styles/app.css';
 import Background from "./background/Background";
 import PlayerStats from "./playerStats/PlayerStats";
 
-
 const App = () => {
   return (
-    <Router>
+    <div>
       <Nav />
       <Background />
       <Routes>
-        <Route path="/" element={<About/>} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <PlayerStats />
-    </Router>
-    );
-  };
+    </div>
+  );
+};
 
 export default App;
