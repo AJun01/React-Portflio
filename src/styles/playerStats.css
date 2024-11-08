@@ -60,3 +60,35 @@ h2{
         font-size: 0.7rem;
     }
 }
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+    #playerStats {
+        width: 8rem;
+        height: 2.5rem;
+        top: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+    
+    h2 {
+        font-size: 0.6rem;
+    }
+
+    #playerStats__lines {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #playerStats__lines__thick {
+        height: 0.15rem;
+    }
+
+    #playerStats__lines__thin {
+        height: 0.05rem;
+    }
+}
