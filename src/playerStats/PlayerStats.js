@@ -32,12 +32,11 @@ const PlayerStats = () => {
     return (
         <div id="playerStats">
             <h1>Yujun Liu LEVEL {age}</h1>
-            <div id="playerStats__lines">
+            {/* <div id="playerStats__lines">
                 <span id="playerStats__lines__thick" style={{ width: `${exp}%` }}></span>
                 <span id="playerStats__lines__thin"></span>
-            </div>
+            </div> */}
             <h2>Fullstack Developer</h2>
-            <p>EXP: {exp}%</p>
         </div>
     );
 };

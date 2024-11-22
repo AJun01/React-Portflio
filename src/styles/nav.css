@@ -6,6 +6,7 @@
     gap: 1.5625rem;
     left: 50%;
     transform: translateX(-50%); /* center-align nav */
+    z-index: 100;
 }
 
 .nav-about {

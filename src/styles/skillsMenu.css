@@ -21,7 +21,6 @@
 .skill-title {
     font-size: 1rem;
     padding-right: 4.5rem;
-
 }
 
 .skill-item.activeSkill .skill-title {
@@ -33,10 +32,11 @@
     cursor: default;
 }
 
-.skill-item.activeSkill:nth-child(1){
+.skill-item.activeSkill:nth-child(1) {
     background: linear-gradient(270deg, #ffffff00, var(--purple) 70%);
 }
-.skill-item.activeSkill:nth-child(2){
+
+.skill-item.activeSkill:nth-child(2) {
     background: linear-gradient(270deg, #ffffff00, var(--blue) 70%);
 }
 
@@ -76,18 +76,24 @@
     gap: 0.3rem;
 }
 
-.level-point{
+.level-point {
     width: 3rem;
     height: 2rem;
     border-radius: 0.2rem;
+    background: linear-gradient(180deg, #1c8298, #074654, #074654); /* Default unfilled */
+    opacity: 0.5;
+    transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+
 .filled {
-    background:  linear-gradient(180deg, #236473, #25afce, #7ce7ff);
+    background: linear-gradient(180deg, #236473, #25afce, #7ce7ff);
+    opacity: 1;
 }
 
 .unfilled {
-    background:  linear-gradient(180deg, #1c8298, #074654, #074654);
+    background: linear-gradient(180deg, #1c8298, #074654, #074654);
+    opacity: 0.5;
 }
 
 .skill-sub-container {
@@ -97,6 +103,40 @@
     gap: 0.4rem;
 }
 
+.charging {
+    animation: charge-animation 0.5s forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes charge-animation {
+    0% {
+        background: linear-gradient(180deg, #1c8298, #074654, #074654);
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+    100% {
+        background: linear-gradient(180deg, #236473, #25afce, #7ce7ff);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Loading Placeholder */
+.level-point.loading {
+    background: linear-gradient(180deg, #c1c1c1, #8a8a8a);
+    animation: loading-placeholder 1s infinite alternate;
+}
+
+@keyframes loading-placeholder {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* Responsive */
 @media (max-width: 1100px) {
     .skill-item.activeSkill .skill-title {
         font-size: 1rem;
@@ -106,7 +146,7 @@
         display: none;
     }
 
-    .level-point{
+    .level-point {
         width: 1.2rem;
         height: 1rem;
         border-radius: 0.1rem;
@@ -116,7 +156,7 @@
         gap: 0.15rem;
     }
 
-    .skill-sub-container-1 
+    .skill-sub-container-1,
     .skill-sub-container-2 {
         gap: 0.5rem;
     }
@@ -126,10 +166,13 @@
         gap: 0.2rem;
     }
 
-    h1{
+    h1 {
         font-size: 0.8rem;
     }
-    h2, h3, p {
+
+    h2,
+    h3,
+    p {
         font-size: 0.7rem;
     }
 
@@ -146,7 +189,6 @@
         width: 12rem;
     }
 }
-
 
 @media (max-width: 700px) {
     .menu {
