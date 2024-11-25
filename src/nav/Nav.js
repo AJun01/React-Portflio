@@ -53,7 +53,7 @@ export default function Nav() {
     
         return(
             <Link to={to} className={linkClass}>
-                <img src={imgSrc} alt={altText}/>
+                <img className='icon' src={imgSrc} alt={altText}/>
                 {isCurrent && <h1 className='page-title'>{PageTitle}</h1>}
             </Link>
         );

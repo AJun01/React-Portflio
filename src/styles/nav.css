@@ -1,4 +1,18 @@
+
+@keyframes softIconGlow {
+    0%,
+    100% {
+        filter: drop-shadow(0 0 5px rgba(255, 200, 200, 0.2))
+                drop-shadow(0 0 10px rgba(255, 200, 200, 0.1));
+    }
+    50% {
+        filter: drop-shadow(0 0 10px rgba(255, 200, 200, 0.3))
+                drop-shadow(0 0 15px rgba(255, 200, 200, 0.2));
+    }
+}
+
 .nav {
+
     position: fixed;
     display: flex;
     align-items: flex-start;
@@ -7,6 +21,15 @@
     left: 50%;
     transform: translateX(-50%); /* center-align nav */
     z-index: 100;
+}
+
+.icon{
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(0 0 5px rgba(255, 200, 200, 0.2))
+    drop-shadow(0 0 10px rgba(255, 200, 200, 0.1));
+animation: softIconGlow 5s infinite alternate;
+animation-timing-function: ease-in-out;
 }
 
 .nav-about {

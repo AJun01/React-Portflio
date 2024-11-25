@@ -54,6 +54,17 @@
     border: none;
     font-family: "Russo One", sans-serif;
     cursor: pointer;
+    text-shadow:
+    0 0 5px #f00,
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 30px #00f,
+    0 0 40px #00f,
+    0 0 50px #00f,
+    0 0 60px #00f;
+animation:
+    neonTurnOn 2s forwards,
+    neonBlink 5s infinite 2s;
   }
   
   .success-message {

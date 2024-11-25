@@ -1,3 +1,61 @@
+@keyframes neonTurnOn {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes neonBlink {
+    0%,
+    80%,
+    100% {
+        opacity: 1;
+    }
+    81% {
+        opacity: 0.8;
+    }
+    83% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0.8;
+    }
+    87% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes softGlow {
+    0%,
+    100% {
+        text-shadow:
+            0 0 5px rgba(255, 200, 200, 0.2),
+            0 0 10px rgba(255, 200, 200, 0.1);
+    }
+    50% {
+        text-shadow:
+            0 0 10px rgba(255, 200, 200, 0.3),
+            0 0 15px rgba(255, 200, 200, 0.2);
+    }
+}
 
 .menu{
     width: 19rem;
@@ -21,10 +79,27 @@
 .title {
     font-size: 1rem;
     padding-right: 2.5rem;
+    text-shadow:
+    0 0 5px rgba(255, 200, 200, 0.3),
+    0 0 10px rgba(255, 200, 200, 0.2),
+    0 0 15px rgba(255, 200, 200, 0.1);
+animation: softGlow 5s infinite alternate;
+animation-timing-function: ease-in-out;
 }
 
 .item.active .title {
     font-size: 1.5rem;
+    text-shadow:
+    0 0 5px #f00,
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 30px #00f,
+    0 0 40px #00f,
+    0 0 50px #00f,
+    0 0 60px #00f;
+animation:
+    neonTurnOn 2s forwards,
+    neonBlink 5s infinite 2s;
 }
 
 .sub-container {
@@ -44,6 +119,7 @@
 .item.active:nth-child(1) {
     background: linear-gradient(90deg, var(--transparent), var(--purple) 70%);
     border-radius: var(--radius-right);
+    
 }
 
 .item.active:nth-child(2) {
@@ -60,6 +136,7 @@
 .sub-container-2.active-subheading h3, 
 .sub-container-3.active-subheading h3 {
     border-radius: var(--radius-left);
+    
 }
 
 .sub-container-1.active-subheading h3 {
@@ -75,6 +152,17 @@
 .item.active {
     position: relative;
     cursor: default;
+    text-shadow:
+    0 0 5px #f00,
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 30px #00f,
+    0 0 40px #00f,
+    0 0 50px #00f,
+    0 0 60px #00f;
+animation:
+    neonTurnOn 2s forwards,
+    neonBlink 5s infinite 2s;
 }
 
 .p-container {
@@ -85,7 +173,12 @@
     display: block;
     font-size: 1rem;
     font-family: 'Fast-Font', sans-serif;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    text-shadow:
+    0 0 5px rgba(255, 200, 200, 0.3),
+    0 0 10px rgba(255, 200, 200, 0.2),
+    0 0 15px rgba(255, 200, 200, 0.1);
+animation: softGlow 5s infinite alternate;
+animation-timing-function: ease-in-out;
 }
 
 .icon-title-container{
@@ -93,6 +186,12 @@
     gap:1.2rem;
     margin-bottom: 0.5rem;
     cursor: default;
+    text-shadow:
+    0 0 5px rgba(255, 200, 200, 0.3),
+    0 0 10px rgba(255, 200, 200, 0.2),
+    0 0 15px rgba(255, 200, 200, 0.1);
+animation: softGlow 5s infinite alternate;
+animation-timing-function: ease-in-out;
 }
 
 .icon {
@@ -107,6 +206,17 @@
     position: relative;
     margin: 0.2rem 0;
     padding: 0.5rem 0 0.5rem 1rem;
+    text-shadow:
+    0 0 5px #f00,
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 30px #00f,
+    0 0 40px #00f,
+    0 0 50px #00f,
+    0 0 60px #00f;
+animation:
+    neonTurnOn 2s forwards,
+    neonBlink 5s infinite 2s;
 }
 
 @media (max-width: 700px) {

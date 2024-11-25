@@ -15,7 +15,7 @@
     left: 50%;
     width: 50px; /* Initial size */
     height: 50px; /* Initial size */
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 40%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #7ce7ff 40%, #25afce 70%);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
     filter: blur(0px);
