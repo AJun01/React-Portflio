@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
+@font-face {
+    font-family: 'Fast-Font';
+    src: url('./fonts/Fast_Serif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-family: "Russo One", sans-serif;
     color: white;

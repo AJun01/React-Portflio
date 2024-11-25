@@ -68,7 +68,10 @@
   }
   
   .project-sub-container p {
-    font-size: 0.875rem;
+    display: block;
+    font-size: 1rem;
+    font-family: 'Fast-Font', sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
   }
   
   .link-container a {
