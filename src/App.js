@@ -11,6 +11,7 @@ import Background from './background/Background';
 import PlayerStats from './playerStats/PlayerStats';
 import useSlideDirection from './hooks/useSlideDirection'; 
 import useDelayedContent from './hooks/useDelayedContent'; 
+import HenshinEffect from "./avatar/AvatarHuman";
 
 const App = () => {
   const location = useLocation();
@@ -20,6 +21,7 @@ const App = () => {
 
   return (
     <div>
+       <HenshinEffect />
       {/* Conditionally render Nav, Background, and PlayerStats after the delay */}
       {showContent && <Nav />}
       <Background play={showContent} />
@@ -33,10 +35,10 @@ const App = () => {
         >
           <div className="page-wrapper">
             <Routes location={location}>
-              <Route path="/" element={<About />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={showContent && <About />} />
+              <Route path="/skills" element={showContent && <Skills />} />
+              <Route path="/projects" element={showContent && <Projects />} />
+              <Route path="/contact" element={showContent && <Contact />} />
             </Routes>
           </div>
         </CSSTransition>

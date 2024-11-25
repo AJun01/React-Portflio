@@ -12,7 +12,8 @@ class HenshinEffect extends Component {
           showSecondImage: false,  // Controls the visibility of the second image
           showThirdImage: false,   // Controls the visibility of the third image
           showLightEffect: false,  // Controls the visibility of the light effect
-          showWhiteOverlay: false, // Controls the visibility of the white overlay
+          showWhiteOverlay: false,
+          henshinZIndex: 999,  // Controls the visibility of the white overlay
         };
       }
     
@@ -63,6 +64,9 @@ class HenshinEffect extends Component {
                 // Fade out the white overlay
                 setTimeout(() => {
                   this.setState({ showWhiteOverlay: false });
+
+                  this.setState({ henshinZIndex: -999 });
+
                   if (this.props.onComplete) {
                     this.props.onComplete();
                   }
@@ -80,6 +84,7 @@ class HenshinEffect extends Component {
           showThirdImage,
           showLightEffect,
           showWhiteOverlay,
+          henshinZIndex,
         } = this.state;
     return (
       <>
@@ -96,7 +101,8 @@ class HenshinEffect extends Component {
               width: '100%',
               height: '90%',
               objectFit: 'contain',
-              zIndex: 999,
+              pointerEvents: 'none',
+              zIndex: henshinZIndex,
             }}
           />
         )}
@@ -114,7 +120,8 @@ class HenshinEffect extends Component {
                 width: '100%',
                 height: '90%',
                 objectFit: 'contain',
-                zIndex: 999,
+                pointerEvents: 'none',
+                zIndex: henshinZIndex,
             }}
           />
         )}
@@ -132,7 +139,8 @@ class HenshinEffect extends Component {
               width: '100%',
               height: '90%',
               objectFit: 'contain',
-              zIndex: 999,
+              pointerEvents: 'none',
+              zIndex: henshinZIndex,
             }}
           />
         )}

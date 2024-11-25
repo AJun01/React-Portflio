@@ -21,7 +21,7 @@
     filter: blur(0px);
     opacity: 0;
     animation: lightEffectScale 2s forwards, lightEffectOpacity 1s forwards;
-    z-index: 1000;
+    z-index: 999;
   }
   
   /* Keyframe for scaling and blurring */
@@ -62,7 +62,7 @@
     height: 100%;
     background-color: white;
     opacity: 1;
-    z-index: 1000;
+    z-index: 999;
     animation: fadeOutWhiteOverlay 1s forwards;
   }
   

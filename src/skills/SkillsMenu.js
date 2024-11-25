@@ -40,7 +40,7 @@ export default class SkillsMenu extends Component {
                   : "unfilled"
               }`}
               style={{
-                animationDelay: initialRender && i < skill.level ? `${i * 0.1}s` : "0s", // Add stagger effect for the first render
+                animationDelay: initialRender && i < skill.level ? `${i * 0.2}s` : "0s", // Add stagger effect for the first render
               }}
             />
           ))}
