@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.264bae69.css",
+    "main.css": "/React-Portfolio/static/css/main.5bd5794c.css",
     "main.js": "/React-Portfolio/static/js/main.29cc2b28.js",
     "static/media/bg-universe.mp4": "/React-Portfolio/static/media/bg-universe.9b3324e48bb969a307dc.mp4",
     "static/media/end.png": "/React-Portfolio/static/media/end.9152f74e7f7f7a2b9e26.png",
@@ -9,14 +9,15 @@
     "static/media/project-2.png": "/React-Portfolio/static/media/project-2.bdcc3ebd6a1b9b68cae0.png",
     "static/media/project-3.png": "/React-Portfolio/static/media/project-3.d8fe36044056a72b1e64.png",
     "static/media/middle.png": "/React-Portfolio/static/media/middle.f184b2588bde3fc3d3cb.png",
+    "static/media/Fast_Serif.ttf": "/React-Portfolio/static/media/Fast_Serif.a6f6111ed6066953463c.ttf",
     "static/media/start.png": "/React-Portfolio/static/media/start.803ca5f81d4e59ad7cc7.png",
     "static/media/project-1.png": "/React-Portfolio/static/media/project-1.d3c0e9d0d7b7df612c52.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.264bae69.css.map": "/React-Portfolio/static/css/main.264bae69.css.map",
+    "main.5bd5794c.css.map": "/React-Portfolio/static/css/main.5bd5794c.css.map",
     "main.29cc2b28.js.map": "/React-Portfolio/static/js/main.29cc2b28.js.map"
   },
   "entrypoints": [
-    "static/css/main.264bae69.css",
+    "static/css/main.5bd5794c.css",
     "static/js/main.29cc2b28.js"
   ]
 }
